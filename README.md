@@ -1,2 +1,6 @@
 # Angular13docs
-In this you will get a angular based all solutions.
+
+String Interpolation 
+>> String interpolation is binding of a data inside curely bases.
+ex.
+<p>{{allowNewUser}}</p>
