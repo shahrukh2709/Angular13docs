@@ -37,3 +37,29 @@ export class AppComponent {
 
 
 *********************************************************************************************
+Event Binding
+Definition:
+In Angular 8, event binding is used to handle the events raised by the user actions like button click, mouse movement, keystrokes, etc. When the DOM event happens at an element(e.g. click, keydown, keyup), it calls the specified method in the particular component.
+
+import { Component } from '@angular/core';    
+@Component({    
+  selector: 'app-root',    
+  templateUrl: './app.component.html',    
+  styleUrls: ['./app.component.css']    
+})    
+export class AppComponent {    
+  gfg(event) {
+    console.log(event.toElement.value);
+  }    
+}
+
+Syntax :
+< element (event) = function() >
+Example:
+<h1>
+  GeeksforGeeks
+</h1>
+<input (click)="gfg($event)" value="Geeks">
+*********************************************************************************************
+
+
